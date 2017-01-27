@@ -39,10 +39,10 @@ class Lutador
     }
 
     public function empatarLuta(){
-        setEmpates($this->getEmpates() + 1);
+        $this->setEmpates($this->getEmpates() + 1);
     }
-    function __construct($no, $na, $id, $al, $pe, $vi, $de, $em)
-    {
+    
+    function __construct($no, $na, $id, $al, $pe, $vi, $de, $em){
         $this->nome = $no;
         $this->nacionalidade = $na;
         $this->idade = $id;
